@@ -1,0 +1,42 @@
+.description {
+  width: 320px;
+  margin: 0 auto;
+
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+}
+.description__heading-cite {
+  margin: 0;
+  padding-top: 29px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+
+.description__paragraph {
+  padding-top: 19px;
+
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+}
+
+.description__image {
+  padding-left: 20px;
+}
+
+.description__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 22px;
+}
+

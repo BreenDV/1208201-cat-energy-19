@@ -1,0 +1,29 @@
+.social {
+  width: 280px;
+}
+
+.social__link--vk::before {
+  content: "";
+  background-image: url("/img/icon-vk.svg");
+  display: block;
+  width: 22px;
+  height: 12px;
+}
+
+
+.social__link--instagram::before {
+  content: "";
+  background-image: url("/img/icon-insta.svg");
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+.social__link--facebook::before {
+  content: "";
+  background-image: url("/img/icon-fb.svg");
+  display: block;
+  width: 10px;
+  height: 19px;
+
+}

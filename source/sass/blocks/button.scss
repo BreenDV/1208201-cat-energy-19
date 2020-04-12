@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 280px;
+  height: 40px;
+
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  background-color: #68b738;
+
+}
+
+.button--silver {
+  color: #444444;
+  background-color: #f2f2f2;
+}

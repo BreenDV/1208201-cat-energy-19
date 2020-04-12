@@ -29,10 +29,24 @@ body {
   padding: 0;
 }
 
-@import "page-header.scss";
-@import "description.scss";
-@import "programs.scss";
-@import "works.scss";
-@import "page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/description.scss";
+@import "blocks/button.scss";
+@import "blocks/programs.scss";
+@import "blocks/works.scss";
+@import "blocks/examle.scss";
+@import "blocks/result.scss";
+@import "blocks/address.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+@import "blocks/page-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/additionally.scss";
+@import "blocks/list-product.scss";
+
 
 
