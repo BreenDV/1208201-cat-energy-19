@@ -1,0 +1,33 @@
+.address__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.address__wrapper--bg-grey {
+  background-color: #f2f2f2;
+}
+
+
+.address__text {
+  margin: 0;
+  padding-left: 19px;
+  padding-top: 31px;
+  padding-bottom: 26px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+.address__street {
+  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 26px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial";
+  color: #444444;
+}

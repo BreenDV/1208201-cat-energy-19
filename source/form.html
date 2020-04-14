@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="page-header">
-        <a href="#" class="page-header__logo-link">
-            <img class="page-heder__logo-image" src="#" width="39" height="39" alt="Логотип сайта">
-        </a>
-        <h2 class="page-header__name-cite">Cat energy</h2>
-        <nav class="nav-menu">
-            <button class="nav-menu__button-menu">Открыть меню</button>
-            <div class="nav-menu__wrapper">
-            <ul class="nav-menu__menu-list site-list">
-                <li class="site-list__item"><a href="#">Главная</a></li>
-                <li class="site-list__item"><a href="#">Каталог продукции</a></li>
-                <li class="site-list__item"><a href="#">Подбор программы</a></li>
-            </ul>
-            </div>
-        </nav>
-    </header>
+  <header class="page-header">
+    <div class="page-header-wrapper">
+    <a href="#" class="page-header__logo-link">
+      <img class="page-header__img-logo" src="/img/logo-mobile.svg" width="191" height="39" alt="Лого">
+    </a>
+    <button class="page-header__button-menu">
+      <img class="page-header__img-close" src="/img/icon-close.svg" width="19" height="19" alt="Кнопка закрытия">
+    </button>
+
+    <nav class="nav-menu">
+        <div class="nav-menu__wrapper">
+        <ul class="nav-menu__menu-list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a href="#">Подбор программы</a></li>
+        </ul>
+        </div>
+    </nav>
+  </div>
+</header>
     <main class="page-form">
         <h1 class="page-form__title">Подбор программы</h1>
         <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -85,28 +90,30 @@
         </div>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__heading">
-            <span class="page-footer__name">Cat energy</span>
-        </div>
-        <div class="page-footer__social social">
-            <ul class="social__list">
-                <li class="social__item">
-                    <a class="social__link social__link--vk" href="#">Иконка ВК</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--telegram" href="#">Иконка телеграмм</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#">Иконка фейсбук</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-            <span class="copyright__text"></span>
-            <a href="#" class="copyright__link">
-                <img src="#" width="27" height="34" alt="Лого HTML Academy">
-            </a>
-        </div>
-    </footer>
+      <div class="page-footer__wrapper">
+      <div class="page-footer__heading">
+          <img class="page-footer__logo" src="/img/logo-footer.svg" alt="Текстовое лого" width="124" height="28">
+      </div>
+      <div class="page-footer__social social">
+          <ul class="social__list">
+              <li class="social__item">
+                  <a class="social__link social__link--vk" href="#"></a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#"></a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#"></a>
+              </li>
+          </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+          <span class="copyright__text">HTML Academy</span>
+          <a href="#" class="copyright__link">
+                <img src="/img/htmlacademy.svg" width="60" height="60" alt="Лого HTML Academy">
+          </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

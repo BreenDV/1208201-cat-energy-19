@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="page-header">
+        <div class="page-header-wrapper">
         <a href="#" class="page-header__logo-link">
-            <img class="page-heder__logo-image" src="#" width="39" height="39" alt="Логотип сайта">
+          <img class="page-header__img-logo" src="/img/logo-mobile.svg" width="191" height="39" alt="Лого">
         </a>
-        <h2 class="page-header__name-cite">Cat energy</h2>
+        <button class="page-header__button-menu">
+          <img class="page-header__img-close" src="/img/icon-close.svg" width="19" height="19" alt="Кнопка закрытия">
+        </button>
+
         <nav class="nav-menu">
-            <button class="nav-menu__button-menu">Открыть меню</button>
             <div class="nav-menu__wrapper">
             <ul class="nav-menu__menu-list site-list">
                 <li class="site-list__item"><a href="#">Главная</a></li>
                 <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-                <li class="site-list__item"><a href="#">Подбор программы</a></li>
+                <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
             </ul>
             </div>
         </nav>
+      </div>
     </header>
 
     <main class="page-main">
         <section class="description">
             <h1 class="description__heading-cite">Функциональное питание для котов</h1>
             <p class="description__paragraph">Занялся собой? Займись котом!</p>
-            <img class="description__image" src="#" width="280" height="270" alt="Фотография продукта">
+            <img class="description__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Фотография продукта">
             <a href="#" class="description__button button">Подобрать программу</a>
         </section>
         <section class="programs">
@@ -47,70 +52,83 @@
             <h2 class="works__title">Как это работает</h2>
             <ul class="works__list">
                 <li class="works__item works__item--substance">
+                    <img src="/img/advantage-leaf@1x.png" alt="Картинка листка с дерева" class="works__img--substance" width="50" height="50">
                     <p class="works__description">Функциональное питание содержит только полезные питательные вещества.</p>
                 </li>
                 <li class="works__item works__item--powder">
+                  <img src="/img/advantage-powder@1x.png" alt="Картинка листка с дерева" class="works__img--powder" width="50" height="50">
                     <p class="works__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
                 </li>
                 <li class="works__item works__item--eats">
+                  <img src="/img/advantage-dining@1x.png" alt="Картинка листка с дерева" class="works__img--eats" width="50" height="50">
                     <p class="works__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
                 </li>
                 <li class="works__item works__item--changes">
+                  <img src="/img/advantage-clock@1x.png" alt="Картинка листка с дерева" class="works__img--changes" width="50" height="50">
                     <p class="works__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
                 </li>
             </ul>
         </section>
         <section class="example">
+          <div class="example__wrapper">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
+            <div class="example__result-wrapper">
             <div class="example__result result">
-                <p>снижение веса</p>
-                <span>5 кг</span>
+              <span>5 кг</span>
+              <p>снижение веса</p>
             </div>
             <div class="example__result result">
-                <p>затрачено времени</p>
                 <span>60 дней</span>
+                <p>затрачено времени</p>
             </div>
-            <p class="examle__text-expenses">Затраты на питание: 15 000 руб.</p>
-            <img src="#" alt="Фото кота" width="311" height="232" class="example__image">
-            <span class="example__before">Было</span>
+          </div>
+            <p class="example__text-expenses">Затраты на питание: 15 000 руб.</p>
+            <img src="/img/before-mobile@1x.png" alt="Фото кота" width="311" height="232" class="example__image">
+            <div class="example__scale">
+            <span class="example__after">Было</span>
             <!--Шкалу я так понял можно сделать псевдо элементами-->
-            <span class="example__afrer">Стало</span>
+            <span class="example__before">Стало</span>
+          </div>
+          </div>
         </section>
         <div class="address">
-          <p class="address__text address__text--uppercase">приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="address__wrapper">
+          <p class="address__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
           <div class="map">
-          <img class="map__img-map" src="#" width="320" height="400" alt="Карта">
-          <img class="map__point-img" src="#" width="55" height="53" alt="Каринка точки на карте">
+          <img class="map__img-map" src="/img/map.png" width="320" height="400" alt="Карта">
+          <img class="map__point-img" src="/img/map-pin.png" width="55" height="53" alt="Каринка точки на карте">
+          </div>
           </div>
     </main>
     <footer class="page-footer">
-
+        <div class="page-footer__wrapper">
         <div class="page-footer__heading">
-            <span class="page-footer__name">Cat energy</span>
+            <img class="page-footer__logo" src="/img/logo-footer.svg" alt="Текстовое лого" width="124" height="28">
         </div>
         <div class="page-footer__social social">
             <ul class="social__list">
                 <li class="social__item">
-                    <a class="social__link social__link--vk" href="#">Иконка ВК</a>
+                    <a class="social__link social__link--vk" href="#"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--telegram" href="#">Иконка телеграмм</a>
+                    <a class="social__link social__link--instagram" href="#"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#">Иконка фейсбук</a>
+                    <a class="social__link social__link--facebook" href="#"></a>
                 </li>
             </ul>
         </div>
         <div class="page-footer__copyright copyright">
-            <span class="copyright__text"></span>
+            <span class="copyright__text">HTML Academy</span>
             <a href="#" class="copyright__link">
-                <img src="#" width="27" height="34" alt="Лого HTML Academy">
+                <img src="/img/htmlacademy.svg" width="60" height="60" alt="Лого HTML Academy">
             </a>
         </div>
+      </div>
     </footer>
 </body>
 </html>
