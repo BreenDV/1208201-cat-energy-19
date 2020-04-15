@@ -27,19 +27,26 @@
   </div>
 </header>
     <main class="page-form">
+      <div class="page-form__wrapper">
         <h1 class="page-form__title">Подбор программы</h1>
-        <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="page-form__text">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
         <form class="page-form__form forms" action="https://echo.htmlacademy.ru" method="get">
-            <label for="name">Имя:*</label>
-            <input class="forms__name" type="text" id="name" name="name" placeholder="БАРСИК" required autofocus><br>
-            <label for="weight">Вес (кг):*</label>
-            <input class="forms__weight" type="text" id="weight" name="weight" placeholder="7" pattern="[0-9] {1,2}" required><br>
-            <label for="age">Возраст (лет):</label>
+            <label class="forms__label" for="name">
+              <p>Имя:*</p>
+              <input class="forms__name" type="text" id="name" name="name" placeholder="БАРСИК" required autofocus><br>
+            </label>
+            <label class="forms__label" for="weight">
+              <p>Вес (кг):*</p>
+              <input class="forms__weight" type="text" id="weight" name="weight" placeholder="7" pattern="[0-9] {1,2}" required><br>
+            </label>
+            <label class="forms__label" for="age">
+              <p>Возраст (лет):</p>
             <input class="forms__age" type="text" id="age" name="age" pattern="[0-9] {1,2}" placeholder="7"><br>
+          </label>
             <ul class="forms__radio-btn">
                 <li class="forms__list-item">
                     <input type="radio" name="programs" id="losing weight">
-                    <label for="Losing weight">похудение</label>
+                    <label for="Losing weight">Похудение</label>
                 </li>
                 <li class="forms__list-item">
                     <input type="radio" name="programs" id="mass">
@@ -51,14 +58,18 @@
                 </li>
             </ul>
             <h2 class="forms__title">Контактные данные (владельца кота)</h2>
-            <label for="email">E-mail:*</label>
+            <label class="forms__label" for="email">
+              <p>E-mail:*</p>
             <input class="forms__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required><br>
-            <label for="tel">Телефон:*</label>
+            </label>
+            <label class="forms__label" for="tel">
+              <p>Телефон:*</p>
             <input class="forms__tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"required><br>
-            <h2 class="forms__title">Комментарий</h2>
+            </label>
+            <h2 class="forms__title forms__title--big-element">Комментарий</h2>
             <textarea class="forms__comment" name="comment" id="" cols="30" rows="10">Расскажите обо всех повадках кота
             </textarea><br>
-            <h2 class="forms__title">Дополнительно</h2>
+            <h2 class="forms__title forms__title--middle-element">Дополнительно</h2>
             <ul class="forms__list-checkbox">
                 <li class="forms__list-item">
                     <input class="forms__checkbox" type="checkbox" name="sugar" id="sugar" checked>
@@ -81,13 +92,16 @@
             <p class="forms__text">* — Обязательные поля</p>
         </form>
         <div class="address">
-          <p class="address__text address__text--uppercase">приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="address__wrapper address__wrapper--bg-grey">
+          <p class="address__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
           <div class="map">
-          <img class="map__img-map" src="#" width="320" height="400" alt="Карта">
-          <img class="map__point-img" src="#" width="55" height="53" alt="Каринка точки на карте">
-        </div>
+          <img class="map__img-map" src="/img/map.png" width="320" height="400" alt="Карта">
+          <img class="map__point-img" src="/img/map-pin.png" width="55" height="53" alt="Каринка точки на карте">
+          </div>
+          </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
