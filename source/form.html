@@ -7,7 +7,7 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header-wrapper">
+    <div class="page-header__wrapper">
     <a href="#" class="page-header__logo-link">
       <img class="page-header__img-logo" src="/img/logo-mobile.svg" width="191" height="39" alt="Лого">
     </a>
@@ -30,75 +30,75 @@
       <div class="page-form__wrapper">
         <h1 class="page-form__title">Подбор программы</h1>
         <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="page-form__form form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="form__info">
+        <form class="page-form__program questionary" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="questionary__info">
               <legend>Данные кота</legend>
-          <label class="form__label" for="name">
+          <label class="questionary__label" for="name">
               <p>Имя:*</p>
-              <input class="form__name" type="text" id="name" name="name" placeholder="БАРСИК" required autofocus><br>
+              <input class="questionary__name" type="text" id="name" name="name" placeholder="БАРСИК" required autofocus><br>
             </label>
-            <label class="form__label" for="weight">
+            <label class="questionary__label" for="weight">
               <p>Вес (кг):*</p>
-              <input class="form__weight" type="text" id="weight" name="weight" placeholder="7" pattern="[0-9] {1,2}" required>
+              <input class="questionary__weight" type="text" id="weight" name="weight" placeholder="7" pattern="[0-9] {1,2}" required>
             </label>
-            <label class="form__label" for="age">
+            <label class="questionary__label" for="age">
               <p>Возраст (лет):</p>
-            <input class="form__age" type="text" id="age" name="age" pattern="[0-9] {1,2}" placeholder="7"><br>
+            <input class="questionary__age" type="text" id="age" name="age" pattern="[0-9] {1,2}" placeholder="7"><br>
           </label>
-            <ul class="form__radio-btn">
-                <li class="form__list-item">
+            <ul class="questionary__radio-btn">
+                <li class="questionary__list-item">
                     <input type="radio" name="programs" id="losing weight">
                     <label for="Losing weight">Похудение</label>
                 </li>
-                <li class="form__list-item">
+                <li class="questionary__list-item">
                     <input type="radio" name="programs" id="mass">
                     <label for="mass">Набор массы</label>
                 </li>
-                <li class="form__list-item">
+                <li class="questionary__list-item">
                     <input type="radio" name="programs" id="unknown">
                     <label for="unknown">Не знаю (Нужен ваш совет)</label>
                 </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts">
+          <fieldset class="questionary__contacts">
             <legend>Контактные данные (владельца кота)</legend>
-            <label class="form__label" for="email">
+            <label class="questionary__label" for="email">
               <p>E-mail:*</p>
-            <input class="form__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required><br>
+            <input class="questionary__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required><br>
             </label>
-            <label class="form__label" for="tel">
+            <label class="questionary__label" for="tel">
               <p>Телефон:*</p>
-            <input class="form__tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"required><br>
+            <input class="questionary__tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"required><br>
             </label>
           </fieldset>
-          <fieldset class="form__comments">
+          <fieldset class="questionary__comments">
             <legend>Комментарий</legend>
-            <textarea class="form__comment" name="comment" id="" cols="30" rows="10">Расскажите обо всех повадках кота
+            <textarea class="questionary__comment" name="comment" id="" cols="30" rows="10">Расскажите обо всех повадках кота
             </textarea>
           </fieldset>
-          <fieldset class="form__additionally">
+          <fieldset class="questionary__additionally">
             <legend>Дополнительно</legend>
-            <ul class="form__list-checkbox">
-                <li class="form__list-item">
-                    <input class="form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+            <ul class="questionary__list-checkbox">
+                <li class="questionary__list-item">
+                    <input class="questionary__checkbox" type="checkbox" name="sugar" id="sugar" checked>
                     <label for="sugar">Сахарозаменитель</label>
                 </li>
-                <li class="form__list-item">
+                <li class="questionary__list-item">
                     <input class="form__checkbox" type="checkbox" name="water" id="water">
                     <label for="water">Питьевая вода</label>
                 </li>
-                <li class="form__list-item">
+                <li class="questionary__list-item">
                     <input class="form__checkbox" type="checkbox" name="milk" id="milk">
                 <label for="milk">Молоко</label>
                 </li>
-                <li class="form__list-item">
+                <li class="questionary__list-item">
                     <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
                     <label for="vitamins">Витамины</label>
                 </li>
             </ul>
           </fieldset>
-            <input class="form__button button" type="submit" value="Отправить заявку">
-            <p class="form__text">* — Обязательные поля</p>
+            <input class="questionary__button button" type="submit" value="Отправить заявку">
+            <p class="questionary__text">* — Обязательные поля</p>
         </form>
         <div class="address">
           <div class="address__wrapper address__wrapper--bg-grey">
