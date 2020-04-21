@@ -1,5 +1,5 @@
 .works {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
 
 
 .works__list {
-  width: 280px;
+  width: 87.5%;
   margin: 0;
   padding: 0;
 
@@ -27,6 +27,7 @@
 .works__item {
   position: relative;
 
+  height: 60px;
   display: flex;
   align-items: center;
 

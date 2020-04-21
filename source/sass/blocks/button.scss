@@ -3,8 +3,10 @@
   align-items: center;
   justify-content: center;
 
-  width: 280px;
+  width: 87.5%;
   height: 40px;
+
+
 
   line-height: 18px;
   color: #ffffff;
@@ -13,6 +15,13 @@
   text-decoration: none;
   background-color: #68b738;
 
+}
+
+@media (min-width: 768px) {
+  .button {
+
+    width: 245px;
+  }
 }
 
 .button--silver {

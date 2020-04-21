@@ -1,10 +1,20 @@
 .description {
-  width: 320px;
+  position: relative;
+
+  min-width: 320px;
+  max-width: 767px;
   margin: 0 auto;
 
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 305px;
 
+}
+
+@media (min-width: 768px) {
+  .description {
+    background-image: none;
+  }
 }
 .description__heading-cite {
   margin: 0;
@@ -18,6 +28,12 @@
 
 }
 
+@media (min-width: 768px) {
+  .description__heading-cite {
+    color: black;
+  }
+}
+
 
 .description__paragraph {
   padding-top: 19px;
@@ -29,8 +45,15 @@
 
 }
 
+@media (min-width: 768px) {
+  .description__paragraph {
+    color: black;
+  }
+}
+
 .description__image {
-  padding-left: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .description__button {
@@ -38,5 +61,14 @@
   margin-right: auto;
   margin-top: 3px;
   margin-bottom: 22px;
+
+}
+
+@media (min-width: 768px) {
+  .description__button {
+    position: absolute;
+    top: 103px;
+    z-index: 1;
+  }
 }
 
