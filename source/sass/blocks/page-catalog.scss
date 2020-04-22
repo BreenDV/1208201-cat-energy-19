@@ -4,6 +4,12 @@
 
 }
 
+@media (min-width: $tablet-version) {
+  .page-catalog {
+    width: 768px;
+  }
+}
+
 .page-catalog__title {
   margin: 0;
   padding-top: 19px;

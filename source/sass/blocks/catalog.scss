@@ -1,9 +1,16 @@
 .catalog {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-version) {
+  .catalog {
+    width: 708px;
+    justify-content: space-between;
+  }
 }
 
 
@@ -11,6 +18,17 @@
   display: flex;
   flex-wrap: wrap;
   border-top: 1px solid silver;
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__item {
+    flex-direction: column;
+
+    width: 324px;
+
+    background-color: $silver;
+    border: none;
+  }
 }
 
 .catalog__item:last-child {

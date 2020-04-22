@@ -1,7 +1,14 @@
-@media (min-width: 768px) {
-  .nav-menu__wrapper {
-    min-width: 438px;
+@media (min-width: $tablet-version) {
+  .nav-menu {
+    margin-left: auto;
+  }
+}
 
+@media (min-width: $tablet-version) {
+  .nav-menu__wrapper {
+    width: 438px;
+
+    margin-left: auto;
     padding-right: 31px;
   }
 }
