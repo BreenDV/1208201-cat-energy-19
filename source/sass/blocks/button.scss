@@ -24,6 +24,22 @@
   }
 }
 
+
+
+@media (min-width: $tablet-version) {
+  .button--big-width {
+    width: 633px;
+    margin: 0 auto;
+
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .button--big-width {
+    width: 245px;
+  }
+}
+
 .button--silver {
   color: #444444;
   background-color: #f2f2f2;

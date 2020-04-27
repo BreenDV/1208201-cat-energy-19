@@ -9,6 +9,14 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .social {
+    width: 160px;
+    padding: 0;
+    border: none;
+  }
+}
+
   .social__list {
     list-style: none;
     margin: 0 auto;
@@ -29,6 +37,16 @@
     .social__list {
       width: 33.33%;
       padding: 0;
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-version) {
+    .social__list {
+      width: 160px;
+      margin: 0;
+      padding: 0;
+
       border: none;
     }
   }

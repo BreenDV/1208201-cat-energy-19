@@ -7,7 +7,14 @@
   background-color: #f2f2f2;
 }
 
+@media (min-width: $tablet-version) {
+  .example__wrapper {
+    width: 708px;
+    padding: 0;
 
+    background-color: transparent;
+  }
+}
 
 .example__title {
   margin: 0;
@@ -31,16 +38,38 @@
 
 }
 
+@media (min-width: $tablet-version) {
+  .example__text {
+    width: 676px;
+  }
+}
+
+
+
+.example__result-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .example__result-wrapper {
   position: relative;
 
+  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+@media (min-width: $tablet-version) {
+  .example__result-wrapper {
+    justify-content: left;
+}
+}
+
 
 .example__text-expenses {
+  flex-grow: 1;
   margin-top: 25px;
   margin-bottom: 44px;
 
@@ -51,11 +80,44 @@
   text-align: center;
 }
 
-.example__image {
-  position: relative;
-  left: -15px;
+@media (min-width: $tablet-version) {
+  .example__text-expenses {
+    flex-grow: 0;
+    width: 174px;
+
+    font-size: 20px;
+  }
 }
 
+
+
+@media (min-width: $tablet-version) {
+  .example__result:nth-of-type(1) {
+    margin-right: 42px;
+  }
+}
+
+
+@media (min-width: $tablet-version) {
+  .example__text-expenses {
+    text-align: right;
+  }
+}
+
+.example__image {
+  position: relative;
+}
+
+@media (min-width: $tablet-version) {
+  .example__image {
+    left: 46px;
+
+    width: 338px;
+    height: 499px;
+
+
+  }
+}
 
 .example__scale {
 
@@ -65,9 +127,20 @@
   justify-content: center;
 }
 
+@media (min-width: $tablet-version) {
+  .example__scale {
+    width: 568px;
+
+    margin: 0 auto;
+
+    justify-content: space-between;
+  }
+}
+
 .example__after {
 
   display: flex;
+  align-items: center;
   margin-top: 35px;
   margin-bottom: 38px;
 
@@ -87,6 +160,15 @@
   border: 1px solid #cdcdcd;
 }
 
+@media (min-width: $tablet-version) {
+  .example__after::after {
+    width: 428px;
+    height: 6px;
+
+    margin-left: 24px;
+  }
+}
+
 
 .example__before {
   display: flex;
@@ -101,12 +183,23 @@
 .example__after::before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: 103px;
   width: 35px;
   height: 6px;
   border-radius: 3px;
   background-color: #68b738;
+}
 
 
+@media (min-width: $tablet-version) {
+  .example__after::before {
+    top: 35px;
+    left: 268px;
+    width: 8px;
+    height: 8px;
+
+    border: 5px solid $white;
+    border-radius: 50%;
+  }
 }

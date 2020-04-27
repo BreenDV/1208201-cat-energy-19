@@ -3,6 +3,18 @@
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-version) {
+  .page-form__wrapper {
+    width: $tablet-version;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .page-form__wrapper {
+    width: 1220px;
+  }
+}
+
 .page-form__title{
   margin-top: 19px;
   margin-bottom: 24px;
@@ -12,6 +24,12 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-version) {
+  .page-form__title {
+    padding-left: 32px;
+  }
 }
 
 .page-form__text {
@@ -26,3 +44,9 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-version) {
+  .page-form__text {
+    width: 322px;
+    padding-left: 70px;
+  }
+}
