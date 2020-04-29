@@ -1,6 +1,11 @@
 @media (min-width: $desktop-version) {
+  .questionary__container-info {
+    display: flex;
+  }
+}
+@media (min-width: $desktop-version) {
   .questionary__label-wrapper {
-    width: 570px;
+    width: 600px;
   }
 }
 
@@ -124,6 +129,12 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .questionary__comment {
+    width: 1220px;
+  }
+}
+
 
 .questionary__list-checkbox {
   margin: 0;
@@ -138,6 +149,14 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .questionary__list-item {
+    width: 260px;
+    margin: 0;
+  }
+}
+
+
 
 
 .questionary__button {
@@ -145,11 +164,17 @@
   margin: 0 auto;
 }
 
+.questionary__container-button{
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-version) {
-  .questionary__button {
-    float: left;
+  .questionary__container-button {
+    flex-direction: row;
   }
 }
+
 
 .questionary__text {
   margin-top: 23px;
@@ -161,6 +186,8 @@
   text-align: center;
   color: #444444;
 }
+
+
 
 .questionary__info {
   margin: 0;
@@ -177,6 +204,12 @@
   margin-top: 31px;
   padding: 0;
   border: none;
+}
+
+@media (min-width: $desktop-version) {
+  .quetionary__container-contacts {
+    display: flex;
+  }
 }
 
 .questionary__contacts legend {

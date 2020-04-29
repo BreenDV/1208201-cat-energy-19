@@ -34,6 +34,7 @@
         <form class="page-form__program questionary" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="questionary__info">
               <legend>Данные кота</legend>
+              <div class="questionary__container-info">
               <div class="questionary__label-wrapper">
           <label class="questionary__label" for="name">
               <p>Имя:*</p>
@@ -62,9 +63,11 @@
                     <label for="unknown">Не знаю (Нужен ваш совет)</label>
                 </li>
             </ul>
+          </div>
           </fieldset>
           <fieldset class="questionary__contacts">
             <legend>Контактные данные (владельца кота)</legend>
+            <div class="quetionary__container-contacts">
             <label class="questionary__label" for="email">
               <p>E-mail:*</p>
             <input class="questionary__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required><br>
@@ -73,6 +76,7 @@
               <p>Телефон:*</p>
             <input class="questionary__tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"required><br>
             </label>
+          </div>
           </fieldset>
           <fieldset class="questionary__comments">
             <legend>Комментарий</legend>
@@ -100,8 +104,10 @@
                 </li>
             </ul>
           </fieldset>
+          <div class="questionary__container-button">
             <input class="questionary__button button" type="submit" value="Отправить заявку">
             <p class="questionary__text">* — Обязательные поля</p>
+          </div>
         </form>
         <div class="address">
           <div class="address__wrapper address__wrapper--bg-grey">
