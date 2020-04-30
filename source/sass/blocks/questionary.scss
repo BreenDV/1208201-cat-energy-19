@@ -1,3 +1,14 @@
+@media (min-width: $desktop-version) {
+  .questionary__container-info {
+    display: flex;
+  }
+}
+@media (min-width: $desktop-version) {
+  .questionary__label-wrapper {
+    width: 600px;
+  }
+}
+
 .questionary__label {
   position: relative;
 
@@ -6,6 +17,12 @@
   margin-bottom: 14px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__label {
+    width: 560px;
+  }
 }
 
 .questionary__label:nth-of-type(3) {
@@ -50,6 +67,13 @@
   margin-top: 21px;
 }
 
+@media (min-width: $tablet-version) {
+  .questionary__list-item:first-child {
+    margin: 0;
+    margin-right: 125px;
+  }
+}
+
 .questionary__list-item:last-child {
   margin-bottom: 21px;
 }
@@ -67,6 +91,14 @@
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-version) {
+  .questionary__list-item {
+    width: 220px;
+    margin: 0;
+    margin-right: 125px;
+  }
 }
 
 .questionary__list-item input {
@@ -91,6 +123,18 @@
 
 }
 
+@media (min-width: $tablet-version) {
+  .questionary__comment {
+    width: 631px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__comment {
+    width: 1220px;
+  }
+}
+
 
 .questionary__list-checkbox {
   margin: 0;
@@ -98,11 +142,39 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-version) {
+  .questionary__list-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__list-item {
+    width: 260px;
+    margin: 0;
+  }
+}
+
+
+
 
 .questionary__button {
   border: none;
   margin: 0 auto;
 }
+
+.questionary__container-button{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-version) {
+  .questionary__container-button {
+    flex-direction: row;
+  }
+}
+
 
 .questionary__text {
   margin-top: 23px;
@@ -114,6 +186,8 @@
   text-align: center;
   color: #444444;
 }
+
+
 
 .questionary__info {
   margin: 0;
@@ -130,6 +204,12 @@
   margin-top: 31px;
   padding: 0;
   border: none;
+}
+
+@media (min-width: $desktop-version) {
+  .quetionary__container-contacts {
+    display: flex;
+  }
 }
 
 .questionary__contacts legend {
@@ -193,6 +273,7 @@
   padding: 0;
   border: none;
 }
+
 
 .questionary__additionally legend {
   position: relative;

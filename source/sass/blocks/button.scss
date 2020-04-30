@@ -6,13 +6,38 @@
   width: 280px;
   height: 40px;
 
+
+
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
 
   text-decoration: none;
-  background-color: #68b738;
+  background-color: $green;
 
+}
+
+@media (min-width: 768px) {
+  .button {
+
+    width: 245px;
+  }
+}
+
+
+
+@media (min-width: $tablet-version) {
+  .button--big-width {
+    width: 633px;
+    margin: 0 auto;
+
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .button--big-width {
+    width: 245px;
+  }
 }
 
 .button--silver {
