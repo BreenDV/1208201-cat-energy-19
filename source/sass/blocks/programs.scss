@@ -27,6 +27,7 @@
 @media (min-width: $desktop-version) {
   .programs__list {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -59,14 +60,16 @@
 @media (min-width: $desktop-version) {
   .programs__item {
     width: 570px;
+    margin: 0;
 
   }
 }
 
 .programs__title {
   margin: 0;
-  padding-left: 92px;
-  padding-top: 36px;
+  margin-left: 92px;
+  margin-bottom: 30px;
+  padding-top: 33px;
 
   font-size: 24px;
   line-height: 37px;
@@ -78,7 +81,8 @@
 
 @media (min-width: $tablet-version) {
   .programs__title {
-    padding-left: 53px;
+    margin-left: 55px;
+    margin-bottom: 26px;
     padding-top: 80px;
 
     font-size: 36px;
@@ -89,16 +93,20 @@
 
 @media (min-width: $desktop-version) {
   .programs__title {
-    padding-left: 216px;
-    padding-bottom: 75px;
+    margin: 0;
+    margin-left: 216px;
+    margin-top: 80px;
+    margin-bottom: 78px;
+    padding: 0;
 
   }
 }
 
 .programs__description {
   margin: 0;
-  padding-left: 21px;
-  padding-right: 36px;
+  margin-left: 21px;
+  margin-right: 15px;
+  margin-bottom: 23px;
 
   line-height: 18px;
   font-family: "Arial";
@@ -108,6 +116,8 @@
 
 @media (min-width: $tablet-version) {
   .programs__description {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -115,7 +125,7 @@
 
 @media (min-width: $desktop-version) {
   .programs__description {
-    padding-left: 52px;
+    padding-left: 55px;
 
     font-size: 16px;
     line-height: 24px;
@@ -125,11 +135,20 @@
 @media (min-width: $tablet-version) {
   .programs__description--cat {
     width: 372px;
-
+    margin-left: 52px;
+    margin-bottom: 61px;
     padding: 0;
-    padding-top: 22px;
-    padding-left: 53px;
-    padding-bottom: 56px;
+
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .programs__description--cat {
+    width: 462px;
+    margin-left: 52px;
+    margin-bottom: 35px;
+    padding: 0;
+
   }
 }
 
@@ -140,7 +159,16 @@
     padding: 0;
     padding-top: 27px;
     padding-left: 57px;
-    padding-bottom: 56px;
+    padding-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .programs__description--jaguar {
+    width: 444px;
+    margin-left: 52px;
+    margin-bottom: 35px;
+    padding: 0;
   }
 }
 
@@ -151,7 +179,7 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  width: 280px;
+  width: 240px;
   height: 58px;
   margin: 0;
   margin-left: 21px;
@@ -167,7 +195,8 @@
 
 @media (min-width: $tablet-version) {
   .programs__button {
-    margin-left: 53px;
+    height: auto;
+    margin-left: 55px;
     padding-bottom: 61px;
 
     font-size: 20px;

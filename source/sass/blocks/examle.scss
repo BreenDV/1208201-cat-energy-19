@@ -1,3 +1,17 @@
+@media (min-width: $tablet-version) {
+  .example {
+    width: 768px;
+    margin: 0 auto;
+    background: linear-gradient(to top, #eaeaea 462px, $white 162px);
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .example {
+    width: 100%;
+  }
+}
+
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -29,6 +43,96 @@
   }
 }
 
+.example__container-scale {
+  position: relative;
+}
+
+.example__container-scale::before {
+  content: "";
+  display: block;
+  width: 311px;
+  height: 232px;
+  margin-left: -15px;
+
+
+  background-image: url("/img/before-mobile@1x.png");
+
+}
+
+.example__container-scale::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  display: none;
+  background-image: url("/img/after-mobile@1x.png");
+  width: 311px;
+  height: 232px;
+
+}
+
+@media (min-width: $tablet-version) {
+  .example__container-scale {
+    background: linear-gradient(to top, #eaeaea 462px, $white 162px);
+  }
+}
+
+
+@media (min-width: $tablet-version) {
+  .example__container-scale::before {
+
+    width: 708px;
+    height: 499px;
+    margin-left: 0;
+
+    background-image: url("/img/before-tablet@1x.png");
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .example__container-scale::after {
+    left: 0;
+
+    width: 708px;
+    height: 517px;
+
+    background-image: url("/img/after-tablet@1x.png");
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .example__container-scale {
+    margin-left: 140px;
+  }
+}
+
+
+@media (min-width: $desktop-version) {
+  .example__container-scale::before {
+
+    width: 635px;
+    height: 499px;
+    margin-left: 0;
+
+    background-image: url("/img/before-desktop@1x.png");
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .example__container-scale::after {
+
+    width: 635px;
+    height: 499px;
+    margin-left: 0;
+
+    background-image: url("/img/after-desktop@1x.png");
+  }
+}
+
+
+
+
+
 .example__title {
   margin: 0;
   padding-top: 22px;
@@ -38,6 +142,24 @@
   line-height: 60px;
   font-weight: 400;
 
+}
+
+@media (min-width: $tablet-version) {
+  .example__title {
+    margin: 0;
+    margin-top: 51px;
+    margin-bottom: 60px;
+    padding: 0;
+
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .example__title {
+    margin-top: 48px;
+    margin-bottom: 142px;
+  }
 }
 
 .example__text {
@@ -54,15 +176,27 @@
 @media (min-width: $tablet-version) {
   .example__text {
     width: 676px;
+    margin-bottom: 56px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 
 @media (min-width: $desktop-version) {
   .example__text {
-    width: auto;
+    width: 435px;
+    margin-bottom: 65px;
   }
 }
+
+@media (min-width: $desktop-version) {
+  .example__text br {
+    display: none;
+  }
+}
+
 
 
 .example__container-result {
@@ -74,6 +208,8 @@
 @media (min-width: $tablet-version) {
   .example__container-result {
     justify-content: left;
+    align-items: center;
+    margin-bottom: 86px;
   }
 }
 
@@ -95,8 +231,8 @@
 
 .example__text-expenses {
   flex-grow: 1;
-  margin-top: 25px;
-  margin-bottom: 44px;
+  margin-top: 35px;
+  margin-bottom: 41px;
 
   font-size: 14px;
   line-height: 20px;
@@ -113,6 +249,20 @@
     width: 174px;
 
     font-size: 20px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .example__text-expenses span {
+    display: block;
+    margin-top: 11px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .example__text-expenses span {
+    margin: 0;
+    margin-left: 64px;
   }
 }
 
@@ -134,8 +284,10 @@
 
 @media (min-width: $desktop-version) {
   .example__text-expenses {
+    display: flex;
     width: auto;
     margin: 0;
+    margin-top: 62px;
 
     text-align: left;
   }
@@ -176,6 +328,12 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .example__scale {
+    margin-top: 48px;
+  }
+}
+
 .example__after {
 
   display: flex;
@@ -183,9 +341,17 @@
   margin-top: 35px;
   margin-bottom: 38px;
 
-  font-style: 16px;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-version) {
+  .example__after {
+    margin: 0;
+
+    font-size: 20px;
+  }
 }
 
 .example__after::after {
@@ -219,6 +385,14 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $desktop-version) {
+  .example__before {
+    margin: 0;
+
+    font-size: 20px;
+  }
+}
+
 .example__after::before {
   content: "";
   position: absolute;
@@ -240,5 +414,11 @@
 
     border: 5px solid $white;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .example__after::before {
+    top: 0;
   }
 }
