@@ -12,7 +12,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 39px;
 }
 
 @media (min-width: $tablet-version) {
@@ -31,8 +30,25 @@
 .page-footer__heading {
   width: 280px;
   text-align: center;
-  padding-bottom: 31px;
   border-bottom: 1px solid silver;
+}
+
+@media (min-width: $tablet-version) {
+  .page-footer__heading {
+    text-align: left;
+  }
+}
+
+.page-footer__logo {
+  margin-top: 39px;
+  margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-version) {
+  .page-footer__logo {
+    margin-top: 63px;
+    margin-bottom: 63px;
+  }
 }
 
 @media (min-width: $tablet-version) {
@@ -66,9 +82,15 @@
 
 @media (min-width: $tablet-version) {
   .page-footer__copyright {
-    width: 33.33%;
-
+    width: 165px;
+    margin-left: auto;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .page-footer__copyright {
+    margin: 0;
   }
 }
 

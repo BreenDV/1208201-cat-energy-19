@@ -9,6 +9,16 @@
     width: 438px;
 
     margin-left: auto;
-    padding-right: 31px;
+    margin-right: 31px;
+  }
+}
+
+
+@media (min-width: $desktop-version) {
+  .nav-menu__wrapper {
+    width: 477px;
+
+    margin-left: auto;
+    margin-right: 0px;
   }
 }

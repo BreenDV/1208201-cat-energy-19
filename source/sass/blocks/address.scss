@@ -15,6 +15,9 @@
 @media (min-width: $desktop-version) {
   .address {
     position: relative;
+
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .address__wrapper {
@@ -47,12 +50,19 @@
   .address__text {
     width: 154px;
     padding-left: 70px;
+    padding-top: 66px;
+    padding-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
 @media (min-width: $desktop-version) {
   .address__text {
     padding-left: 75px;
+
+
   }
 }
 
@@ -70,8 +80,19 @@
 
 @media (min-width: $tablet-version) {
   .address__street {
-    width: 154px;
+    width: 155px;
     padding-right: 70px;
+
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .address__street span {
+    display: block;
+    margin-top: 15px;
   }
 }
 
