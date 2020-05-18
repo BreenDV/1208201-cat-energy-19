@@ -23,6 +23,7 @@
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 20px;
   border-top: 1px solid silver;
 }
 
@@ -31,11 +32,20 @@
     flex-direction: column;
 
     width: 324px;
+    margin-top: 142px;
+    padding: 0;
 
     background-color: $silver;
     border: none;
   }
 }
+
+@media (min-width: $tablet-version) {
+  .catalog__item:first-child {
+    margin-top: 156px;
+  }
+}
+
 
 @media (min-width: $desktop-version) {
   .catalog__item {
@@ -43,19 +53,88 @@
   }
 }
 
+
+
+
+
+@media (min-width: $tablet-version) {
+  .catalog__item-chicken-small {
+    margin-top: -46px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__item-chicken-big {
+    margin-top: -82px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__item-fish-small {
+    margin-top: -48px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__item-fish-big {
+    margin-top: -82px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__item-buckwheat-small {
+    margin-top: -45px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__item-buckwheat-big {
+    margin-top: -82px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__item-rice {
+    margin-top: -48px;
+  }
+}
+
+
+
+
+
+
+
+
 .catalog__item:last-child {
   border-bottom: 1px solid silver;
 }
 
+@media (min-width: $tablet-version) {
+  .catalog__item:last-child {
+    background-color: $white;
+    border: 1px solid #cdcdcd;
+  }
+}
+
+
 .catalog__title-product {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 140px;
 }
 
+
+@media (min-width: $tablet-version) {
+  .catalog__title-product {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
 .catalog__title {
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  padding-right: 66px;
 
   font-size: 16px;
   line-height: 20px;
@@ -63,11 +142,46 @@
   text-transform: uppercase;
 }
 
+@media (min-width:$tablet-version) {
+  .catalog__title {
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 39px;
+    margin-bottom: 28px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
 .catalog__product {
   font-size: 12px;
   line-height: 16px;
   font-family: "Arial";
   color: #444444;
+  border-collapse: collapse;
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__product {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .catalog__product {
+    width: 165px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__product  tr{
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .catalog__right {
@@ -77,14 +191,20 @@
 
 .catalog__button {
   margin: 0 auto;
-  margin-top: 23px;
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__button {
+    margin-bottom: 40px;
+  }
 }
 
 
 .catalog__item--plus {
   position: relative;
 }
+
 
 
 .catalog__item--plus::before {
@@ -98,6 +218,23 @@
 }
 
 
+@media (min-width: $tablet-version) {
+  .catalog__item--plus::before {
+    width: 61px;
+    height: 1px;
+    left: 133px;
+    top: 85px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .catalog__item--plus::before {
+    width: 61px;
+    height: 1px;
+    left: 93px;
+    top: 85px;
+  }
+}
 .catalog__item--plus::after {
   content: "";
     position: absolute;
@@ -109,19 +246,55 @@
     transform: rotate(90deg);
 }
 
+@media (min-width: $tablet-version) {
+  .catalog__item--plus::after {
+    width: 61px;
+    height: 1px;
+    left: 133px;
+    top: 85px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .catalog__item--plus::after {
+    width: 61px;
+    height: 1px;
+    left: 93px;
+    top: 85px;
+  }
+}
+
 .catalog__title--plus {
   margin: 0 auto;
-  margin-top: 82px;
-  margin-bottom: 11px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  padding: 0;
   text-align: center;
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__title--plus {
+    width: 135px;
+    margin-top: 166px;
+    margin-bottom: 28px;
+  }
 }
 
 
 .catalog__text {
   margin: 0 auto;
+  margin-bottom: 20px;
 
   font-size: 12px;
   line-height: 16px;
   font-family: "Arial";
   color: #444444;
+}
+
+@media (min-width: $tablet-version) {
+  .catalog__text {
+    width: 165px;
+    text-align: center;
+    margin-bottom: 65px;
+  }
 }

@@ -24,6 +24,12 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .button {
+    width: 170px;
+  }
+}
+
 
 
 @media (min-width: $tablet-version) {

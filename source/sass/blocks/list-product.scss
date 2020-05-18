@@ -5,9 +5,22 @@
 
 }
 
+@media (min-width: $tablet-version) {
+.list-product {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+
+    border: 1px solid #cdcdcd;
+  }
+}
+
 @media (min-width: $desktop-version) {
   .list-product {
-    float: left;
+    width: 895px;
+    margin: 0;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -23,13 +36,74 @@
 }
 
 @media (min-width: $tablet-version) {
-  .list-product__item {
-    width: 708px;
-    display: flex;
-    flex-wrap: wrap;
+  .list-product__item:first-child {
+    border-top: none;
+  }
+
+  .list-product__item:last-child {
+    border-bottom: none;
   }
 }
 
+@media (min-width: $tablet-version) {
+  .list-product__item {
+    width: 628px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .list-product__item {
+    width: 895px;
+    padding: 0;
+  }
+}
+
+
+.list-product__table-products {
+  width: 100%;
+  margin-bottom: 15px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial";
+  color: $black-two;
+  border-collapse: collapse;
+}
+
+@media (min-width: $tablet-version) {
+  .list-product__table-products {
+    width: auto;
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .list-product__table-products {
+    width: 285px;
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+
+.list-product__price-rub {
+  width: 50%;
+  text-align: right;
+}
+
+@media (min-width: $tablet-version) {
+  .list-product__price-rub {
+    width: 94px;
+  }
+}
+/*
 .list-product__volume {
   display: inline-block;
   width: 50%;
@@ -67,7 +141,7 @@
 
   }
 }
-
+*/
 
 .list-product__title {
   margin: 15px 0;
@@ -79,14 +153,35 @@
   color: #222222;
 }
 
+@media (min-width: $tablet-version) {
+  .list-product__title {
+    margin-top: 27px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 @media (min-width: $desktop-version) {
   .list-product__title {
-    width: 130px;
+    width: 325px;
   }
 }
 
 
 .list-product__button {
-  margin-top: 15px;
   margin-bottom: 17px;
+}
+
+@media (min-width: $tablet-version) {
+  .list-product__button {
+    margin-bottom: 28px;
+  }
+}
+
+
+@media (min-width: $desktop-version) {
+  .list-product__button {
+    margin: 0;
+  }
 }
