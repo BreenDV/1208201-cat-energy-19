@@ -57,6 +57,11 @@
 
   background-image: url("/img/before-mobile@1x.png");
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  background-image: url("/img/before-mobile@2x.png");
+  background-size: cover;
+}
+
 }
 
 .example__container-scale::after {
@@ -69,6 +74,11 @@
   width: 311px;
   height: 232px;
 
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/after-mobile@2x.png");
+    background-size: cover;
+  }
 }
 
 @media (min-width: $tablet-version) {
@@ -86,6 +96,10 @@
     margin-left: 0;
 
     background-image: url("/img/before-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/before-tablet@2x.png");
+    }
   }
 }
 
@@ -97,6 +111,10 @@
     height: 517px;
 
     background-image: url("/img/after-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/after-tablet@2x.png");
+    }
   }
 }
 
@@ -115,6 +133,10 @@
     margin-left: 0;
 
     background-image: url("/img/before-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/before-desktop@2x.png");
+    }
   }
 }
 
@@ -126,6 +148,10 @@
     margin-left: 0;
 
     background-image: url("/img/after-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/after-desktop@2x.png");
+    }
   }
 }
 

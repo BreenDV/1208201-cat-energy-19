@@ -87,39 +87,21 @@
   }
 }
 
-.description__image-mobile {
+.description__image {
   display: block;
   margin: 0 auto;
 }
 
-.description__image-tablet {
-  display: none;
-}
-
-.description__image-desktop {
-  display: none;
-}
 
 @media (min-width: $tablet-version) {
-  .description__image-mobile {
-    display: none;
-  }
-
-  .description__image-tablet {
-    display: block;
-    width: 708px;
+  .description__image{
+    width: 709px;
     height: 609px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-version) {
-  .description__image-tablet {
-    display: none;
-  }
-
-  .description__image-desktop {
-    display: block;
+  .description__image {
     width: 552px;
     height: 499px;
 

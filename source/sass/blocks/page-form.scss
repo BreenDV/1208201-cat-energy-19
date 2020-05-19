@@ -38,6 +38,7 @@
 @media (min-width: $desktop-version) {
   .page-form__title {
     font-size: 60px;
+    padding: 0;
   }
 }
 
@@ -61,5 +62,11 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .page-form__text {
+    padding: 0;
   }
 }

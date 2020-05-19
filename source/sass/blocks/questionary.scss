@@ -9,13 +9,14 @@
 @media (min-width: $desktop-version) {
   .questionary__container-info {
     display: flex;
-    width: 630px;
+    justify-content: space-between;
+    width: 1220px;
   }
 }
 
 @media (min-width: $desktop-version) {
   .questionary__label-wrapper {
-    width: 600px;
+    width: 570px;
   }
 }
 
@@ -37,13 +38,23 @@
 
 @media (min-width: $desktop-version) {
   .questionary__label {
-    width: 560px;
+    width: 570px;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
 .questionary__label:nth-of-type(3) {
   margin-bottom: 23px;
 }
+
+@media (min-width: $desktop-version) {
+  .questionary__label:nth-of-type(3) {
+    margin-bottom: 0;
+  }
+}
+
+
 
 .questionary__label p {
   width: auto;
@@ -95,10 +106,16 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .questionary__radio-btn {
+    width: 570px;
+  }
+}
+
 
 .questionary__list-item {
   width: 280px;
-  min-height: 30px;
+  height: 30px;
   margin: 0 auto;
   margin-bottom: 13px;
   display: flex;
@@ -123,8 +140,20 @@
   margin-top: 22px;
 }
 
+@media (min-width: $tablet-version) {
+  .questionary__list-item--checkbox:first-child {
+    margin-top: 0;
+  }
+}
+
 .questionary__list-item:last-child {
   margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-version) {
+.questionary__list-item--checkbox:last-child {
+    margin-bottom: 54px;
+  }
 }
 
 
@@ -187,13 +216,16 @@
 @media (min-width: $tablet-version) {
   .questionary__comment {
     width: 631px;
-    margin: 0 auto;
+    margin-left: 70px;
   }
 }
 
 @media (min-width: $desktop-version) {
   .questionary__comment {
+    display: block;
     width: 1220px;
+    margin: 0 auto;
+
   }
 }
 
@@ -213,8 +245,9 @@
 
 @media (min-width: $desktop-version) {
   .questionary__list-item {
-    width: 260px;
+    height: 40px;
     margin: 0;
+    margin-bottom: 13px;
   }
 }
 
@@ -226,6 +259,22 @@
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-version) {
+  .questionary__button {
+    margin: 0;
+    margin-left: 71px;
+    margin-right: 61px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__button {
+    width: 570px;
+    margin-left: 0;
+  }
+}
+
 .questionary__container-button{
   display: flex;
   flex-direction: column;
@@ -234,6 +283,16 @@
 @media (min-width: $tablet-version) {
   .questionary__container-button {
     flex-direction: row;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__container-button {
+    width: 1220px;
   }
 }
 
@@ -249,6 +308,12 @@
   color: #444444;
 }
 
+@media (min-width: $tablet-version) {
+  .questionary__text {
+    margin: 0;
+  }
+}
+
 
 
 .questionary__info {
@@ -262,12 +327,28 @@
 }
 
 .questionary__contacts {
+  width: 320px;
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 31px;
   padding: 0;
   border: none;
 }
+
+@media (min-width: $tablet-version) {
+  .questionary__contacts {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__contacts {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+
 
 .questionary__contacts::before {
 content: "";
@@ -296,6 +377,8 @@ z-index: -1;
 @media (min-width: $desktop-version) {
   .quetionary__container-contacts {
     display: flex;
+    justify-content: space-between;
+    width: 1220px;
   }
 }
 
@@ -313,13 +396,21 @@ z-index: -1;
   font-weight: 400;
   background-color: $white;
 }
+
 @media (min-width: $tablet-version) {
   .questionary__contacts legend {
     width: 515px;
-    margin-left: 71px;
+    margin-left: 51px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__contacts legend {
+    margin-left: 90px;
+    margin-bottom: 70px;
   }
 }
 
@@ -334,6 +425,12 @@ z-index: -1;
   }
 }
 
+@media (min-width: $desktop-version) {
+  .questionary__icon-email {
+    left: 530px;
+  }
+}
+
 .questionary__icon-phone {
   position: absolute;
   left: 267px;
@@ -345,14 +442,35 @@ z-index: -1;
   }
 }
 
+@media (min-width: $desktop-version) {
+  .questionary__icon-phone {
+    left: 530px;
+  }
+}
+
 
 .questionary__comments {
+  width: 320px;
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 31px;
   padding: 0;
   border: none;
 }
+
+@media (min-width: $tablet-version) {
+  .questionary__comments {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__comments {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
 
 
 .questionary__comments legend {
@@ -374,11 +492,17 @@ z-index: -1;
 @media (min-width: $tablet-version) {
   .questionary__comments legend {
     width: 180px;
-    margin-left: 71px;
+    margin-left: 51px;
 
     font-size: 36px;
     line-height: 36px;
 
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__comments legend {
+    margin-left: 90px;
   }
 }
 
@@ -401,12 +525,27 @@ z-index: -1;
 
 
 .questionary__additionally {
+  width: 320px;
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 31px;
   padding: 0;
   border: none;
 }
+
+@media (min-width: $tablet-version) {
+  .questionary__additionally {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__additionally {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
 
 
 .questionary__additionally legend {
@@ -425,6 +564,22 @@ z-index: -1;
   background-color: $white;
 }
 
+@media (min-width: $tablet-version) {
+  .questionary__additionally legend {
+    width: 210px;
+    margin-left: 51px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .questionary__additionally legend {
+    margin-left: 90px;
+  }
+}
+
+
 
 .questionary__additionally::before {
   content: "";
@@ -435,6 +590,44 @@ z-index: -1;
   height: 3px;
   background-color: #68b738;
   z-index: -1;
+}
+
+@media (min-width: $tablet-version) {
+  .questionary__additionally::before {
+    top: 21px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .questionary__list-checkbox {
+    width: 630px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__list-checkbox {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .questionary__list-item--checkbox {
+    width: 50%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__list-item--checkbox {
+    width: 25%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }
 
 
