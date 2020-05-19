@@ -59,6 +59,11 @@
 
 }
 
+.site-list__item:last-child {
+  border-bottom: 1px solid silver;
+
+}
+
 @media (min-width: $tablet-version) {
   .site-list__item {
     position: relative;
@@ -70,6 +75,7 @@
 
   .site-list__item:last-child {
     margin: 0;
+    border: none;
   }
 }
 

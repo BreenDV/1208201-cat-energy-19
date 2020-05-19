@@ -6,7 +6,12 @@
 
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 305px;
+  background-size: 320px auto;
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/index-background-mobile@2x.jpg");
+  }
+
 
 }
 
@@ -24,18 +29,9 @@
 
   }
 }
-@media (min-width: $desktop-version) {
-  .description::after {
-    content: "";
-    position: absolute;
-    top: -113px;
-    right: -110px;
-    background-image: url("/img/index-background-desktop@1x.jpg");
-    width: 720px;
-    height: 696px;
-    z-index: -1;
-  }
-}
+
+
+
 
 .description__heading-cite {
   margin: 0;
@@ -91,39 +87,21 @@
   }
 }
 
-.description__image-mobile {
+.description__image {
   display: block;
   margin: 0 auto;
 }
 
-.description__image-tablet {
-  display: none;
-}
-
-.description__image-desktop {
-  display: none;
-}
 
 @media (min-width: $tablet-version) {
-  .description__image-mobile {
-    display: none;
-  }
-
-  .description__image-tablet {
-    display: block;
-    width: 708px;
+  .description__image{
+    width: 709px;
     height: 609px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-version) {
-  .description__image-tablet {
-    display: none;
-  }
-
-  .description__image-desktop {
-    display: block;
+  .description__image {
     width: 552px;
     height: 499px;
 

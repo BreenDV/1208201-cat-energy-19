@@ -1,30 +1,92 @@
-.page-catalog {
+.page-catalog__container {
   width: $mobile-version;
   margin: 0 auto;
 
 }
 
 @media (min-width: $tablet-version) {
-  .page-catalog {
+  .page-catalog__container {
     width: $tablet-version;
   }
 }
 
 @media (min-width: $desktop-version) {
-  .page-catalog {
+  .page-catalog__container {
     width: 1220px;
   }
 }
+.page-catalog__additionally {
+  position: relative;
+  width: 320px;
+  margin: auto;
+}
+
+@media (min-width: $tablet-version) {
+  .page-catalog__additionally {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .page-catalog__additionally {
+  width: 100%;
+  max-width: 1440px;
+  }
+}
+
+.page-catalog__additionally::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-version) {
+    .page-catalog__additionally::before {
+      top: 92px;
+    }
+  }
+
+  @media (min-width: $desktop-version) {
+    .page-catalog__additionally--container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1220px;
+      margin: auto;
+      margin-bottom: 86px;
+    }
+  }
+
 
 .page-catalog__title {
   margin: 0;
-  padding-top: 19px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   padding-left: 20px;
 
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-version) {
+  .page-catalog__title {
+    margin-top: 65px;
+    margin-left: 33px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .page-catalog__title {
+    margin-top: 83px;
+    font-size: 60px;
+  }
 }
 
 
@@ -36,43 +98,82 @@
   margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 35px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 @media (min-width: $tablet-version) {
   .page-catalog__present {
+    display: flex;
+    align-items: center;
     width: 708px;
+    margin-top: 69px;
+    margin-bottom: 76px;
 
-    background-size: cover;
+    background-image: url("/img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/gift-photo-tablet@2x.jpg");
+    }
+
   }
 }
 
 @media (min-width: $desktop-version) {
   .page-catalog__present {
+    align-items: normal;
+    flex-direction: column;
     width: 245px;
     height: 289px;
     margin: 0;
     margin-left: auto;
+
+    background-image: url("/img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
 
-.page-catalog__present::before {
-  content: "";
-  position: absolute;
-  background-image: url("/img/icon-gift.svg");
-  background-repeat: no-repeat;
-  width: 56px;
-  height: 61px;
-  left: 113px;
-  top: 65px;
+.page-catalog__icon-present {
+  display: block;
+
+  width: 55px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  fill: $white;
+}
+
+@media (min-width: $tablet-version) {
+  .page-catalog__icon-present {
+    margin: 0;
+    margin-left: 91px;
+    padding-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .page-catalog__icon-present {
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    padding: 0;
+  }
 }
 
 .page-catalog__present p {
   margin: 0;
   padding-left: 55px;
   padding-right: 55px;
-  padding-top: 185px;
-  padding-bottom: 44px;
+  padding-bottom: 39px;
 
   font-size: 16px;
   line-height: 20px;
@@ -85,20 +186,19 @@
 @media (min-width: $tablet-version) {
   .page-catalog__present p {
     width: 159px;
+    padding: 0;
+    padding-left: 277px;
 
-    padding-top: 75px;
-    padding-bottom: 69px;
-    padding-left: 424px;
+    text-align: left;
   }
 }
 
 
 @media (min-width: $desktop-version) {
   .page-catalog__present p {
-    width: 159px;
-
-    padding-top: 190px;
-    padding-bottom: 43px;
-    padding-left: 43px;
+    width: 162px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
   }
 }
