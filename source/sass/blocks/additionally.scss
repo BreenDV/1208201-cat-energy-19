@@ -18,23 +18,17 @@
 
 @media (min-width: $tablet-version) {
   .additionally__title {
-    margin-left: 27px;
+    margin-left: -40px;
     padding-top: 70px;
     padding-bottom: 75px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 338px;
+    width: 339px;
     font-size: 36px;
     line-height: 36px;
   }
 }
 
-
-@media (min-width: $desktop-version) {
-  .additionally__title {
-  margin-left: 69px;
-  }
-}
 
 
 

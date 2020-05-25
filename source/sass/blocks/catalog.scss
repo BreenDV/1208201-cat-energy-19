@@ -40,11 +40,7 @@
   }
 }
 
-@media (min-width: $tablet-version) {
-  .catalog__item:first-child {
-    margin-top: 156px;
-  }
-}
+
 
 
 @media (min-width: $desktop-version) {
@@ -157,6 +153,7 @@
 }
 
 .catalog__product {
+  width: 100%;
   font-size: 12px;
   line-height: 16px;
   font-family: "Arial";
@@ -175,6 +172,7 @@
     width: 165px;
     margin: auto;
     margin-bottom: 40px;
+    margin-left: 42.5px;
   }
 }
 

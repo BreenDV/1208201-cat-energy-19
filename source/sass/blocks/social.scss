@@ -1,5 +1,6 @@
 .social {
   width: 280px;
+  height: 62px;
 }
 @media (min-width: $tablet-version) {
   .social {
@@ -18,6 +19,7 @@
 }
 
   .social__list {
+    height: 62px;
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -26,8 +28,6 @@
     justify-content: space-between;
     padding-left: 73px;
     padding-right: 82px;
-    padding-top: 21px;
-    padding-bottom: 21px;
     border-bottom: 1px solid silver;
 
   }
@@ -59,6 +59,15 @@
   fill: $brownish-grey;
 }
 
+.social__img-vk:hover  path,
+.social__img-vk:focus  path {
+  fill: $green;
+}
+
+.social__img-vk:active path {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-version) {
   .social__img-vk {
     width: 30px;
@@ -66,9 +75,19 @@
   }
 }
 
-.social__img-instagram  path {
+.social__img-instagram  .icon-instagram {
   fill: $brownish-grey;
 }
+
+.social__img-instagram:hover  .icon-instagram,
+.social__img-instagram:focus  .icon-instagram {
+  fill: $green;
+}
+
+.social__img-instagram:active .icon-instagram {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-version) {
   .social__img-instagram {
@@ -79,6 +98,15 @@
 
 .social__img-facebook  path {
   fill: $brownish-grey;
+}
+
+.social__img-facebook:hover  path,
+.social__img-facebook:focus  path {
+  fill: $green;
+}
+
+.social__img-facebook:active path {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-version) {

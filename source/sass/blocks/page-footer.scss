@@ -44,6 +44,16 @@
   margin-bottom: 31px;
 }
 
+.page-footer__logo:hover,
+.page-footer__logo:focus {
+  opacity: 0.8;
+}
+
+.page-footer__logo:active {
+  opacity: 0.6;
+}
+
+
 @media (min-width: $tablet-version) {
   .page-footer__logo {
     margin-top: 63px;
@@ -73,11 +83,10 @@
 
 .page-footer__copyright {
   width: 280px;
+  height: 78px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 @media (min-width: $tablet-version) {
