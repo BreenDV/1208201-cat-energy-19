@@ -17,20 +17,24 @@
 }
 .page-catalog__additionally {
   position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.page-catalog__additionally-wrapper {
   width: 320px;
   margin: auto;
 }
 
 @media (min-width: $tablet-version) {
-  .page-catalog__additionally {
-    width: 768px;
+  .page-catalog__additionally-wrapper {
+    width: 708px;
   }
 }
 
 @media (min-width: $desktop-version) {
-  .page-catalog__additionally {
-  width: 100%;
-  max-width: 1440px;
+  .page-catalog__additionally-wrapper {
+    width: 1220px;
   }
 }
 

@@ -193,7 +193,7 @@
 
 .works__description {
   margin: 0;
-  padding-left: 80px;
+  margin-left: 80px;
 
   line-height: 18px;
   font-family: "Arial";
@@ -217,6 +217,7 @@
   content: "";
 
   position: absolute;
+  top: 0;
 
   display: block;
   width: 60px;
@@ -238,6 +239,7 @@
 
 .works__img--substance {
   position: absolute;
+  top: 5px;
   left: 5px;
 
   align-items: center;
@@ -253,6 +255,7 @@
 
 .works__img--powder {
   position: absolute;
+  top: 5px;
   left: 5px;
 
   align-items: center;
@@ -269,6 +272,7 @@
 
 .works__img--eats {
   position: absolute;
+  top: 5px;
   left: 5px;
 
   align-items: center;
@@ -284,6 +288,7 @@
 
 .works__img--changes {
   position: absolute;
+  top: 5px;
   left: 5px;
 
   align-items: center;

@@ -1,3 +1,7 @@
+.copyright:hover .copyright__img path {
+  fill: $green;
+}
+
 .copyright__text {
   font-size: 16px;
   line-height: 16px;
@@ -8,3 +12,13 @@
   fill: $brownish-grey;
 }
 
+
+.copyright:hover .copyright__img path,
+.copyright:focus .copyright__img path  {
+  fill: $green;
+}
+
+
+.copyright:active {
+  opacity: 0.3;
+}

@@ -203,28 +203,35 @@
 }
 
 .questionary__comment {
+  display: block;
+
   width: 280px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 13px;
 
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  color: $black-two;
 
-  border: 1px solid silver;
-
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-version) {
   .questionary__comment {
-    width: 631px;
-    margin-left: 70px;
+    width: 630px;
+    padding: 20px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-version) {
   .questionary__comment {
-    display: block;
-    width: 1220px;
-    margin: 0 auto;
+      width: 1220px;
 
   }
 }
@@ -327,7 +334,7 @@
 }
 
 .questionary__contacts {
-  width: 320px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   margin-top: 31px;
@@ -335,18 +342,7 @@
   border: none;
 }
 
-@media (min-width: $tablet-version) {
-  .questionary__contacts {
-    width: 768px;
-  }
-}
 
-@media (min-width: $desktop-version) {
-  .questionary__contacts {
-    width: 100%;
-    max-width: 1440px;
-  }
-}
 
 
 
@@ -361,9 +357,28 @@ background-color: #68b738;
 z-index: -1;
 }
 
+
 @media (min-width: $tablet-version) {
   .questionary__contacts::before {
     top: 21px;
+  }
+}
+
+.questionary__contacts-wrapper {
+  width: 320px;
+  margin: auto;
+  margin-top: -30px;
+}
+
+@media (min-width: $tablet-version) {
+  .questionary__contacts-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .questionary__contacts-wrapper {
+    width: 1220px;
   }
 }
 
@@ -397,6 +412,7 @@ z-index: -1;
   background-color: $white;
 }
 
+
 @media (min-width: $tablet-version) {
   .questionary__contacts legend {
     width: 515px;
@@ -409,7 +425,7 @@ z-index: -1;
 
 @media (min-width: $desktop-version) {
   .questionary__contacts legend {
-    margin-left: 90px;
+    margin-left: -20px;
     margin-bottom: 70px;
   }
 }
@@ -417,6 +433,7 @@ z-index: -1;
 .questionary__icon-email {
   position: absolute;
   left: 267px;
+  top: 15px;
 }
 
 @media (min-width: $tablet-version) {
@@ -434,6 +451,7 @@ z-index: -1;
 .questionary__icon-phone {
   position: absolute;
   left: 267px;
+  top: 15px;
 }
 
 @media (min-width: $tablet-version) {
@@ -450,7 +468,7 @@ z-index: -1;
 
 
 .questionary__comments {
-  width: 320px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   margin-top: 31px;
@@ -458,18 +476,23 @@ z-index: -1;
   border: none;
 }
 
+.questionary__comments-wrapper {
+  width: 320px;
+  margin: auto;
+  margin-top: -30px;
+}
+
 @media (min-width: $tablet-version) {
-  .questionary__comments {
+.questionary__comments-wrapper {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-version) {
-  .questionary__comments {
-    width: 100%;
-    max-width: 1440px;
+  .questionary__comments-wrapper {
+      width: 1220px;
+    }
   }
-}
 
 
 
@@ -502,7 +525,7 @@ z-index: -1;
 
 @media (min-width: $desktop-version) {
   .questionary__comments legend {
-    margin-left: 90px;
+    margin-left: -20px;
   }
 }
 
@@ -525,7 +548,7 @@ z-index: -1;
 
 
 .questionary__additionally {
-  width: 320px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   margin-top: 31px;
@@ -533,20 +556,24 @@ z-index: -1;
   border: none;
 }
 
+
+.questionary__additionally-wrapper {
+  width: 280px;
+  margin: auto;
+  margin-top: -30px;
+}
+
 @media (min-width: $tablet-version) {
-  .questionary__additionally {
-    width: 768px;
+  .questionary__additionally-wrapper {
+    width: $tablet-version;
   }
 }
 
 @media (min-width: $desktop-version) {
-  .questionary__additionally {
-    width: 100%;
-    max-width: 1440px;
+  .questionary__additionally-wrapper {
+    width: 1220px;
   }
 }
-
-
 
 .questionary__additionally legend {
   position: relative;
@@ -555,6 +582,7 @@ z-index: -1;
 
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: -20px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -573,9 +601,9 @@ z-index: -1;
   }
 }
 
-@media (min-width: $tablet-version) {
+@media (min-width: $desktop-version) {
   .questionary__additionally legend {
-    margin-left: 90px;
+    margin-left: -20px;
   }
 }
 
@@ -668,4 +696,53 @@ border-left: 1px solid $green;
 border-bottom: 1px solid $green;
 background-color: transparent;
 transform: rotate(-45deg);
+}
+
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  outline: none;
+
+}
+
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="tel"]:hover,
+input[type="tel"]:focus {
+  border: 1px solid #cdcdcd;
+}
+
+input[type="text"]:active {
+  border: 2px solid $black-two;
+  outline: none;
+}
+
+
+input[type="email"]:active,
+input[type="tel"]:active {
+
+  border: 2px solid $black-two;
+  outline: none;
+}
+
+
+input[type="radio"]:hover + label::before,
+input[type="radio"]:focus + label::before,
+input[type="checkbox"]:hover + label::before,
+input[type="checkbox"]:focus + label::before{
+  border: 1px solid #bababa;
+}
+
+input[type="radio"]:active + label,
+input[type="checkbox"]:active + label {
+  opacity: 0.3;
 }

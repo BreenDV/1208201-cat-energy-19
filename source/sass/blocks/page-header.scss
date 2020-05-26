@@ -4,11 +4,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: $desktop-version) {
-  .page-header {
-    max-width: 1440px;
-  }
-}
+
 
 @media (min-width: $desktop-version) {
   .page-header--bg::after {
@@ -68,6 +64,17 @@ margin: 0 auto;
   padding-left: 20px;
   padding-bottom: 15px;
 }
+
+
+.page-header__logo-link:hover,
+.page-header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-link:active {
+  opacity: 0.6;
+}
+
 
 @media (min-width: $tablet-version) {
   .page-header__logo-link {

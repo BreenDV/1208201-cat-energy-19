@@ -23,6 +23,17 @@
   color: $black;
 
 }
+.site-list__item a:hover,
+.site-list__item a:focus {
+  opacity: 0.6;
+}
+
+.site-list__item a:active {
+  opacity: 0.3;
+}
+
+
+
 
 @media (min-width: $tablet-version) {
   .site-list__item  a {
@@ -58,6 +69,7 @@
   border-top: 1px solid silver;
 
 }
+
 
 .site-list__item:last-child {
   border-bottom: 1px solid silver;
